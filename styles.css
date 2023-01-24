@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background: #000;
+    color: #ffff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./Images/Netflix-background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%; 
+    position: relative;    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/*.logo{
+    width: 150px;
+    cursor: pointer;
+}*/
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #ffff;
+    padding: 7px 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.header-content h1{
+   font-size: 2.4rem;
+   line-height: 1.2;
+   font-weight: 700;
+   max-width: 500px; 
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+.email-signup{
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.email-signup input{
+    flex: 1;
+    border: 0;
+    margin-left: 20px;
+    outline: 0;
+}
+
+.email-signup button{
+    background: #db0001;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    outline:0;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+/* -----------------main-section-------------*/
+.main-section{
+    padding: 50px 8%;
+    font-size: 22px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px o;
+    align-items: center;
+}
+
+
+.text-content, .image-content{
+    flex-basis: 50%;
+    margin-bottom: 3rem;
+}
+
+.image-content img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.main-section h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+
+.main-section p{
+    font-size: 1.2rem;
+}
+
+.section-faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.section-faq h2{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.questions{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.questions li label{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-size: 500;
+    padding: 20px;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 12px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display:none
+}
+
+.questions .content{
+    background: #303030;
+    max-height: 0;
+    text-align: left;
+    transition: max-height 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+
+.questions input[type="radio"]:checked + label + .content{
+    max-height: 38rem;
+    padding: 2rem 1.3rem;
+}
+
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.section-faq .email
